@@ -9,7 +9,7 @@ use font::{FontInstanceKey, FontKey, FontTemplate};
 use std::sync::Arc;
 
 #[repr(C)]
-#[derive(Clone, Copy, Debug, Deserialize, Eq, Hash, PartialEq, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Eq, Hash, PartialEq, Serialize, Ord, PartialOrd)]
 pub struct ImageKey(pub IdNamespace, pub u32);
 
 impl ImageKey {
